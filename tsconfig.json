@@ -11,6 +11,14 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
+    "paths": {
+      "nm-splitter": [
+        "dist/nm-splitter"
+      ],
+      "nm-splitter-divider": [
+        "dist/nm-splitter-divider"
+      ]
+    },
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,

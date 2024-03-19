@@ -3,5 +3,71 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "nm-splitter": {
+      "projectType": "library",
+      "root": "projects/nm-splitter",
+      "sourceRoot": "projects/nm-splitter/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/nm-splitter/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nm-splitter/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/nm-splitter/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/nm-splitter/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "nm-splitter-divider": {
+      "projectType": "library",
+      "root": "projects/nm-splitter-divider",
+      "sourceRoot": "projects/nm-splitter-divider/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/nm-splitter-divider/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nm-splitter-divider/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/nm-splitter-divider/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/nm-splitter-divider/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    }
   }
 }

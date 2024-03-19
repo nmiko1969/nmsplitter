@@ -1,0 +1,7 @@
+
+<div #mainPanel [fxLayout]="mylayout" class="nmsplit">
+  <div #elReference [fxLayout]="mylayout" [fxFlex]="splitPercents[i]" *ngFor="let panel of splitContainers; index as i">
+    <app-nm-splitter-divider [moveable]="separatorList[i]" [splithoriz]="splithoriz" (resizeout)="setResizing($event)" [dividerIndex]="i"></app-nm-splitter-divider>
+    <ng-template *ngTemplateOutlet="panel.template!"></ng-template>
+  </div>
+</div>
