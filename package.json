@@ -1,6 +1,13 @@
 {
   "name": "@miko/nm-split",
-  "version": "0.0.1",
+  "version": "0.0.3",
+  "author": {
+    "name": "Miklos Nagyhazi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmiko1969/nmsplitter.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
